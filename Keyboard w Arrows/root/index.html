@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <title>Klaviatuur noole sümbolitega</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="counter">
+          <p id="counter"></p>
+        </div>
+      </div>
+    </header>
+
+    <section id=clickable>
+      <div class="container">
+        <div id="clickableImg" style="position: relative;">
+          <img src="./images/Klaviatuur3.png" alt="Klaviatuur" style="position: absolute; top:0px;left:0px;">
+          <div class="divButton" id="tabulaator" onclick="quiz(this)" style="height:65px;width:100px;position:absolute;left:0px; top:108px;"></div>
+          <div class="divButton" id="suurtähelukk" onclick="quiz(this)" style="height:65px;width:120px;position:absolute;left:0px; top:176px;"></div>
+          <div class="divButton" id="shiftLeft" onclick="quiz(this)" style="height:65px;width:80px;position:absolute;left:0px; top:241px;"></div>
+          <div class="divButton" id="shiftRight" onclick="quiz(this)" style="height:65px;width:130px;position:absolute;left:848px; top:241px;"></div>
+          <div class="divButton" id="backspace" onclick="quiz(this)" style="height:65px;width:145px;position:absolute;left:903px; top:46px;"></div>
+          <div class="divButton" id="enter" onclick="quiz(this)" style="height:130px;width:105px;position:absolute;left:940px; top:111px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="question">
+          <img src="./images/happy.png" alt="Happy" id="happy">
+          <img src="./images/sad.png" alt="Sad" id="sad">
+          <div class="qBox" id="qBox"></div>
+          <button type="button" class="button_1" name="nextButton" id="nextButton" onclick="quiz(this)"></button>
+          <button type="button" class="button_1" name="endModalButton" id="endModalButton" onclick="openEndModal()"></button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+      </div>
+    </footer>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="startModal" role="dialog" data-backdrop="false">
+        <div class="modal-dialog">
+           <div class="modal-dialog modal-dialog-centered" role="document">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="col-12 modal-title text-center">Ülesanne</h4>
+            </div>
+            <div class="modal-body text-center">
+              <p>Vali klaviatuurilt õige klahv!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="modalButton" class="col-3 btn btn-outline-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="endModal" role="dialog" data-backdrop="false">
+      <div class="modal-dialog">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="col-12 modal-title text-center"></h4>
+          </div>
+          <div class="modal-body text-center">
+            <p>Tubli, sa vastasid kõigile küsimustele õigesti!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="modalButton" class="col-3 btn btn-outline-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+
+</html>

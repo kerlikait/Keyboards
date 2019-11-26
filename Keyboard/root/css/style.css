@@ -1,0 +1,100 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #35424a;
+}
+
+/*Global*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Header*/
+header {
+  padding-top: 10px;
+  min-height: 10px;
+  margin-bottom: 20px;
+  background-color: auto;
+  color: #ffffff;
+  border-bottom:#ea0253 3px solid;
+}
+
+header h2 span {
+  color: #ea0253;
+}
+
+/*Showcase*/
+#clickable {
+  position: relative;
+  z-index: 1;
+}
+
+
+#clickableImg {
+    min-height: 350px;
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    background-color: auto;
+  }
+
+.divButton {
+  background-color:#000000;
+  border: 5px solid #000000;
+  opacity: 0;
+}
+
+.divButton:hover {
+  cursor: pointer;
+  opacity: 0.1;
+}
+
+.activeDivButton{
+  border: 5px solid #ea0253;
+  background-color:transparent;
+  opacity: 1;
+}
+
+.activeDivButton:hover{
+  opacity: 1;
+}
+
+#info {
+  position: relative;
+  width: 820px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  background-color: auto;
+}
+
+#infoBox{
+  position: absolute;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  width: 800px;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+#infoBoxImage{
+  max-width: 800px;
+  height: auto;
+}
+
+/*Footer*/
+footer {
+  padding-top: 10px;
+  min-height: 40px;
+  margin-bottom: 20px;
+  background-color: auto;
+}

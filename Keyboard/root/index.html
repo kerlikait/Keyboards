@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <title>Keyboard</title>
+  </head>
+  <body>
+
+  <header>
+  <div class="container">
+    <h2><span>Klõpsa</span> klaviatuuril, et rohkem infot näha!</h2>
+  </div>
+  </header>
+
+  <section id=clickable>
+    <div class="container">
+      <div id="clickableImg" style="position: relative;">
+        <img src="./images/QwertyLayout.png" alt="Keyboard" style="width:1000px;position: absolute; top:0px;left:0px;">
+        <div class="divButton" id="tabulaator" onclick="info(this)" style="height:50px;width:80px;position:absolute;left:9px; top:66px;"></div>
+        <div class="divButton" id="capsLock" onclick="info(this)" style="height:50px;width:95px;position:absolute;left:9px; top:123px;"></div>
+        <div class="divButton" id="shiftLeft" onclick="info(this)" style="height:50px;width:60px;position:absolute;left:10px; top:183px;"></div>
+        <div class="divButton" id="ctrlLeft" onclick="info(this)" style="height:50px;width:75px;position:absolute;left:13px; top:241px;"></div>
+        <div class="divButton" id="ctrlRight" onclick="info(this)" style="height:50px;width:75px;position:absolute;left:791px; top:241px;"></div>
+        <div class="divButton" id="winKeyLeft" onclick="info(this)" style="height:50px;width:45px;position:absolute;left:98px; top:241px;"></div>
+        <div class="divButton" id="winKeyRight" onclick="info(this)" style="height:50px;width:45px;position:absolute;left:677px; top:241px;"></div>
+        <div class="divButton" id="alt" onclick="info(this)" style="height:50px;width:75px;position:absolute;left:156px; top:241px;"></div>
+        <div class="divButton" id="spaceBar" onclick="info(this)" style="height:50px;width:340px;position:absolute;left:241px; top:241px;"></div>
+        <div class="divButton" id="altGr" onclick="info(this)" style="height:50px;width:75px;position:absolute;left:589px; top:241px;"></div>
+        <div class="divButton" id="menu" onclick="info(this)" style="height:50px;width:45px;position:absolute;left:735px; top:241px;"></div>
+        <div class="divButton" id="backspace" onclick="info(this)" style="height:50px;width:107px;position:absolute;left:763px; top:9px;"></div>
+        <div class="divButton" id="enter" onclick="info(this)" style="height:107px;width:77px;position:absolute;left:793px; top:68px;"></div>
+        <div class="divButton" id="shiftRight" onclick="info(this)" style="height:50px;width:150px;position:absolute;left:721px; top:183px;"></div>
+        <div class="divButton" id="delete" onclick="info(this)" style="height:48px;width:45px;position:absolute;left:911px; top:10px;"></div>
+        <div class="divButton" id="navigation" onclick="info(this)" style="height:65px;width:90px;position:absolute;left:887px; top:223px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+  <div class="container">
+    <div id="info">
+      <div class="infoBox" id="infoBox"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+  </div>
+</footer>
+
+  </body>
+</html>
