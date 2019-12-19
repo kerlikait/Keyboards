@@ -1,6 +1,6 @@
 var questions = [
   {
-    prompt: "Tab - Tabulaator",
+    prompt: "Tab - Tabeldusklahv",
     answer: "tabulaator",
   },
   {
